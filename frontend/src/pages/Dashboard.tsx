@@ -88,7 +88,7 @@ export default function Dashboard() {
                       outerRadius={100}
                       label
                     >
-                      {categories.map((cat, index) => (
+                      {categories.map((_, index) => (
                         <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
                       ))}
                     </Pie>
